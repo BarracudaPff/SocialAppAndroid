@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "661016471980",
+    "firebase_url": "https://socail-app-eceff-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "socail-app-eceff",
+    "storage_bucket": "socail-app-eceff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661016471980:android:203785e5deeb5e1afd3209",
+        "android_client_info": {
+          "package_name": "com.samsung.socialappandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661016471980-rejg3upacfqoduhco5hcevnc6qedoplt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVqwWCduY8PqSE_PsgCTKCdHYzRA8J_xI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661016471980-rejg3upacfqoduhco5hcevnc6qedoplt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
