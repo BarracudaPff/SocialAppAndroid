@@ -3,6 +3,7 @@ package com.samsung.socialappandroid;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
@@ -17,6 +18,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.samsung.socialappandroid.auth.SignInActivity;
+import com.samsung.socialappandroid.services.AuthService;
 
 import java.util.Date;
 
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     Button actionButton;
     Button actionButtonFromEdit;
     Button deleteActionButton;
+    Button logOutButton;
     EditText referenceEditText;
     EditText valueEditText;
 
@@ -55,6 +59,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 delete();
+            }
+        });
+
+        logOutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AuthService.logOut();
+                startActivity(new Intent(getBaseContext(), SignInActivity.class));
             }
         });
 
@@ -144,6 +156,8 @@ public class MainActivity extends AppCompatActivity {
 
         referenceEditText = findViewById(R.id.referenceEditText);
         valueEditText = findViewById(R.id.valueEditText);
+
+        logOutButton =  findViewById(R.id.buttonLogOut);
     }
 
     @Deprecated
