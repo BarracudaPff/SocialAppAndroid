@@ -1,0 +1,38 @@
+{
+  "string": "12312312",
+  "stringWithQuote": "string \" dasda",
+  "number": 123,
+  "booleanValue": false,
+  "nicknames": [
+    "Abds",
+    "adsdas",
+    "dasda"
+  ],
+  "object": {
+    "12312": {
+      "name": "Some name",
+      "age": 123,
+      "gender": "g"
+    },
+    "asd": {
+      "name": "Some name",
+      "age": 123,
+      "gender": "g"
+    },
+    "123132": {
+      "name": "Some name",
+      "age": 123,
+      "gender": "g"
+    },
+    "1234324312": {
+      "name": "Some name",
+      "age": 123,
+      "gender": "g"
+    },
+    "1212312312": {
+      "name": "Some name",
+      "age": 123,
+      "gender": "g"
+    }
+  }
+}
