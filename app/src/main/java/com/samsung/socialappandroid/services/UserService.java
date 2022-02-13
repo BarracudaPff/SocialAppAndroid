@@ -9,6 +9,7 @@ public class UserService {
         return new User(
                 "",
                 authResult.getUser().getEmail(),
+                "",
                 authResult.getUser().getMetadata().getCreationTimestamp()
         );
     }

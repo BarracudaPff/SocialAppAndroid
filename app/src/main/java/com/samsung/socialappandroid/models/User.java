@@ -5,15 +5,18 @@ import java.util.Date;
 public class User {
     public String name;
     public String email;
-    public Date creationDate;
+    public String description;
+    public long creationDate;
 
     public User() {
+        //do not remove
     }
 
-    public User(String name, String email, long creationDate) {
+    public User(String name, String email, String description, long creationDate) {
         this.name = name;
         this.email = email;
-        this.creationDate = new Date(creationDate);
+        this.description = description;
+        this.creationDate = creationDate;
     }
 
     @Override
@@ -21,6 +24,7 @@ public class User {
         return "User{" +
                 "name='" + name + '\'' +
                 ", email='" + email + '\'' +
+                ", description='" + description + '\'' +
                 ", creationDate=" + creationDate +
                 '}';
     }
